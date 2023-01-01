@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=NTR&family=Quicksand:wght@600&family=Roboto+Mono:wght@500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,4 +13,50 @@ body,
     width: 100%;
     height: 100%;
     overflow: hidden;
+}
+
+/* css for the name  */
+
+.parent { 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+    font-family: 'NTR', sans-serif;
+}
+
+.name {
+    font-size: 120px;
+    display: flex;
+    align-items: flex-end;
+    padding-top: 500px; 
+    text-shadow: 5px 5px 15px #6db0e7;
+}
+
+.text { 
+    font-size: 30px; 
+    display: flex;
+    margin-top: -35px;
+}
+ 
+/* navigation bar */
+
+.navigation { 
+    display: flex;
+    justify-content: space-around;
+    height: 100px !important; 
+    width: 100%;
+    color:white;
+    font-family: 'NTR', sans-serif;
+    font-size: 25px;
+}
+
+.links { 
+    padding-top: 40px; 
+    cursor: pointer;
+}
+
+.links:hover { 
+    text-shadow: 8px 8px 13px #dc5e68;
+    font-size: 28px;
 }

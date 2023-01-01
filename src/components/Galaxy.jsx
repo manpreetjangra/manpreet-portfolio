@@ -51,7 +51,7 @@ export default function Galaxy() {
 
   const galaxyRef = React.useRef(null);
   useFrame((state, delta) => {
-    galaxyRef.current.rotation.y += delta / 3;
+    galaxyRef.current.rotation.y += delta / 80;
   });
 
   return (
