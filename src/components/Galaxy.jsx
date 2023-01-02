@@ -49,13 +49,13 @@ export default function Galaxy() {
     return positions;
   });
 
+  //galaxy constant slow rotating animation
   const galaxyRef = React.useRef(null);
   useFrame((state, delta) => {
     galaxyRef.current.rotation.y -= delta / 80;
   });
 
-  const three = useThree();
-  const { camera } = useThree();
+  //scroll animations
   const scroll = useScroll();
   useFrame((state, delta) => {
     const s1 = scroll.range(0, 1 / 4);
@@ -64,15 +64,8 @@ export default function Galaxy() {
     const s4 = scroll.range(3 / 4, 1 / 4);
     galaxyRef.current.rotation.x = Math.PI - (Math.PI / 2) * s1 + s2 * 0.22;
     galaxyRef.current.rotation.x = Math.PI - (Math.PI / 2) * s1 - s2 * 0.22;
-    console.log(s2);
-
-    // if (0 < s2 < 1) {
-    //   galaxyRef.three.camera.position = [0, 1, 8];
-    // } else {
-    //   galaxyRef.three.camera.position = [0, 1, 7.5];
-    // }
-
-    // console.log(camera);
+    galaxyRef.current.rotation.x = Math.PI + (Math.PI / 2) * s1 + s2 + s3 * 0.4;
+    galaxyRef.current.rotation.z = (Math.PI / 2) * s1 + s2 + s3 + s4 * 0.5;
   });
 
   return (

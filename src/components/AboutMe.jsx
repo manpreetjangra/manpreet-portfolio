@@ -23,7 +23,7 @@ export default function AboutMe() {
       </h1>
       <div className="image">
         <img
-          src="../../public/manpreet-picture.jpg"
+          src="/manpreet-picture.jpg"
           alt="a picture of me"
           width="350"
           height="350"
