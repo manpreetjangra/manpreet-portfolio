@@ -7,7 +7,7 @@ export default function Name() {
       <Html fullscreen className="parent">
         <div className="name">MANPREET JANGRA </div>
         <div className="text">
-          Engineering Student | Software Developer | Learner
+          Engineering Student | Software Developer | Learner | Artist
         </div>
       </Html>
     </>

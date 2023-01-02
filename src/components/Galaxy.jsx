@@ -1,8 +1,8 @@
 import React from "react";
 import * as THREE from "three";
 import { useMemo } from "react";
-import { useFrame } from "@react-three/fiber";
-import { GradientTexture } from "@react-three/drei";
+import { useFrame, useThree } from "@react-three/fiber";
+import { GradientTexture, useScroll } from "@react-three/drei";
 
 const parameters = {};
 parameters.count = 225700;
@@ -51,7 +51,28 @@ export default function Galaxy() {
 
   const galaxyRef = React.useRef(null);
   useFrame((state, delta) => {
-    galaxyRef.current.rotation.y += delta / 80;
+    galaxyRef.current.rotation.y -= delta / 80;
+  });
+
+  const three = useThree();
+  const { camera } = useThree();
+  const scroll = useScroll();
+  useFrame((state, delta) => {
+    const s1 = scroll.range(0, 1 / 4);
+    const s2 = scroll.range(1 / 4, 1 / 4);
+    const s3 = scroll.range(2 / 4, 1 / 4);
+    const s4 = scroll.range(3 / 4, 1 / 4);
+    galaxyRef.current.rotation.x = Math.PI - (Math.PI / 2) * s1 + s2 * 0.22;
+    galaxyRef.current.rotation.x = Math.PI - (Math.PI / 2) * s1 - s2 * 0.22;
+    console.log(s2);
+
+    // if (0 < s2 < 1) {
+    //   galaxyRef.three.camera.position = [0, 1, 8];
+    // } else {
+    //   galaxyRef.three.camera.position = [0, 1, 7.5];
+    // }
+
+    // console.log(camera);
   });
 
   return (
