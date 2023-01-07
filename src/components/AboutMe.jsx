@@ -21,19 +21,17 @@ export default function AboutMe() {
         animations using Three.js & React Fiber :&#41; I am also a very big
         space enthusiast &#129680;
       </h1>
-      <div className="image">
-        <img
-          src="/manpreet-picture.jpg"
-          alt="a picture of me"
-          width="350"
-          height="350"
-          style={{ borderRadius: "70px", boxShadow: "10px 10px 30px #6db0e7" }}
-        />
-      </div>
+      <img
+        src="/manpreet-picture.jpg"
+        alt="a picture of me"
+        className="image"
+      />
       <div className="square">
-        <div className="news">
-          C &nbsp; C++ &nbsp;Python&nbsp; Bash &nbsp; HTML &nbsp; CSS &nbsp; SQL
-          &nbsp; GraphQL &nbsp; JavaScript &nbsp; TypeScript &nbsp; React &nbsp;
+        <div className="languages">
+          C &nbsp; &nbsp; C++ &nbsp; &nbsp;Python&nbsp; &nbsp;Bash &nbsp;&nbsp;
+          HTML &nbsp;&nbsp;CSS &nbsp;&nbsp; SQL &nbsp;&nbsp; GraphQL
+          &nbsp;&nbsp; Three.js &nbsp;&nbsp; JavaScript &nbsp;&nbsp; TypeScript
+          &nbsp;&nbsp; React &nbsp;&nbsp;
         </div>
       </div>
     </>

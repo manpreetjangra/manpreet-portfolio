@@ -2,7 +2,7 @@ import Galaxy from "./components/Galaxy";
 import Name from "./components/Name";
 import SocialMedia from "./components/SocialMedia";
 import AboutMe from "./components/AboutMe";
-import Experience from "./components/Experience";
+// import Experience from "./components/Experience";
 import "./index.css";
 
 import { Canvas } from "@react-three/fiber";
@@ -26,7 +26,7 @@ export default function App() {
           </Scroll>
           <Scroll html style={{ width: "100%" }}>
             <AboutMe />
-            <Experience />
+            {/* <Experience /> */}
           </Scroll>
           <Galaxy />
         </ScrollControls>
