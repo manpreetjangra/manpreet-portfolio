@@ -1,5 +1,6 @@
 import { Html } from "@react-three/drei";
 import "../index.css";
+import "animate.css";
 
 export default function Name() {
   return (
@@ -9,6 +10,7 @@ export default function Name() {
         <div className="text">
           Engineering Student | Software Developer | Learner | Artist
         </div>
+        <div className="scroll">Scroll Down → </div>
       </Html>
     </>
   );

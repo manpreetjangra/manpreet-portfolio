@@ -3,7 +3,7 @@ import "../index.css";
 export default function AboutMe() {
   return (
     <>
-      <h1 className="title">About Me</h1>
+      <h1 className="title">&lt;About Me/&gt;</h1>
       <h1 className="body">
         Hey there, thanks for dropping by! 👋 I'm Manpreet :&#41;
         <br></br>
@@ -18,8 +18,8 @@ export default function AboutMe() {
         companies where I focused on software and web development. I am always
         learning and diving deep into technologies/frameworks that are
         interesting to me. Currently, I am super interested in 3D graphics &
-        animations using Three.js :&#41; I am also a very big space enthusiast
-        &#129680;
+        animations using Three.js & React Fiber :&#41; I am also a very big
+        space enthusiast &#129680;
       </h1>
       <div className="image">
         <img
@@ -29,6 +29,12 @@ export default function AboutMe() {
           height="350"
           style={{ borderRadius: "70px", boxShadow: "10px 10px 30px #6db0e7" }}
         />
+      </div>
+      <div className="square">
+        <div className="news">
+          C &nbsp; C++ &nbsp;Python&nbsp; Bash &nbsp; HTML &nbsp; CSS &nbsp; SQL
+          &nbsp; GraphQL &nbsp; JavaScript &nbsp; TypeScript &nbsp; React &nbsp;
+        </div>
       </div>
     </>
   );

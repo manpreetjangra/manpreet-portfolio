@@ -1,8 +1,8 @@
 import Galaxy from "./components/Galaxy";
 import Name from "./components/Name";
-import NavigationBar from "./components/NavigationBar";
 import SocialMedia from "./components/SocialMedia";
 import AboutMe from "./components/AboutMe";
+import Experience from "./components/Experience";
 import "./index.css";
 
 import { Canvas } from "@react-three/fiber";
@@ -26,11 +26,11 @@ export default function App() {
           </Scroll>
           <Scroll html style={{ width: "100%" }}>
             <AboutMe />
+            <Experience />
           </Scroll>
           <Galaxy />
         </ScrollControls>
       </Canvas>
-      <NavigationBar />
       <SocialMedia />
     </>
   );
