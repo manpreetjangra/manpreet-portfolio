@@ -3,6 +3,7 @@ import Name from "./components/Name";
 import SocialMedia from "./components/SocialMedia";
 import AboutMe from "./components/AboutMe";
 import Experience from "./components/Experience";
+import Project from "./components/Project";
 import "./index.css";
 
 import { Canvas } from "@react-three/fiber";
@@ -27,6 +28,7 @@ export default function App() {
           <Scroll html style={{ width: "100%" }}>
             <AboutMe />
             <Experience />
+            <Project />
           </Scroll>
           <Galaxy />
         </ScrollControls>
