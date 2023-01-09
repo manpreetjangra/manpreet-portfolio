@@ -9,7 +9,7 @@ export default function Experience() {
   const handleClickVTS = () => {
     setIsActiveVTS(true);
     setIsActiveMetrix(false);
-    setIsActiveMetrix(false);
+    setIsActiveToronto(false);
   };
 
   const handleClickMetrix = () => {
@@ -47,10 +47,7 @@ export default function Experience() {
           >
             <h1 className="jobtitle">Software Engineer Intern @ VTS</h1>
             <p className="date">SEPT 2022 - DEC 2022</p>
-            <ul
-              style={{ padding: "30px 20px 0 50px", listStyleType: "disc" }}
-              className="notes"
-            >
+            <ul style={{ listStyleType: "disc" }} className="jobnotes">
               <li>
                 Built and deployed company’s maintenance page under a feature
                 flag to complete database upgrade on all environments.
@@ -82,10 +79,7 @@ export default function Experience() {
           >
             <h1 className="jobtitle">Front End Developer Intern @ Metrix</h1>
             <p className="date">JAN 2022 - APR 2022</p>
-            <ul
-              style={{ padding: "30px 20px 0 50px", listStyleType: "disc" }}
-              className="notes"
-            >
+            <ul style={{ listStyleType: "disc" }} className="jobnotes">
               <li>
                 Developed the complete front end of two career development
                 websites using the Gatsby.js framework.
@@ -118,10 +112,7 @@ export default function Experience() {
           >
             <h1 className="jobtitle">Researcher @ University of Toronto</h1>
             <p className="date">AUG 2021 - DEC 2021</p>
-            <ul
-              style={{ padding: "30px 20px 0 50px", listStyleType: "disc" }}
-              className="notes"
-            >
+            <ul style={{ listStyleType: "disc" }} className="jobnotes">
               <li>
                 Developed real-life simulations of the environment and the human
                 body using the Java-based COBWEB software under the supervision

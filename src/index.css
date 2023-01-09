@@ -74,7 +74,7 @@ The Homepage (Manpreet Jangra)
   animation: textclip 2s linear infinite;
   text-shadow: 0px 0px 45px white;
   animation: fadeInDown;
-  animation-duration: 4s;
+  animation-duration: 2s;
 }
 
 @keyframes textclip {
@@ -119,7 +119,7 @@ About Me
   position: absolute;
   top: 120vh;
   left: 10vw;
-  width: 42%;
+  width: 51%;
   font-family: "NTR", sans-serif;
   font-size: 20.5px;
   color: white;
@@ -137,7 +137,13 @@ About Me
   border-radius: 70px;
 }
 
-/* Skills */
+/* 
+/////////////////////////////////////////////////////////////////
+
+Skills
+
+/////////////////////////////////////////////////////////////////
+*/
 
 .square {
   position: absolute;
@@ -178,11 +184,17 @@ About Me
   }
 }
 
-/* Experience */
+/* 
+/////////////////////////////////////////////////////////////////
+
+Experience 
+
+/////////////////////////////////////////////////////////////////
+*/
 
 .experience-title {
   position: absolute;
-  top: 220vh;
+  top: 215vh;
   left: 10vw;
   font-size: 5em;
   color: white;
@@ -192,7 +204,7 @@ About Me
 
 .experience {
   position: absolute;
-  top: 240vh;
+  top: 235vh;
   left: 10vw;
   background-color: rgba(0, 0, 0, 0.5);
   width: 80%;
@@ -204,7 +216,7 @@ About Me
 }
 
 .card {
-  height: 500px;
+  height: 525px;
   width: 45%;
   background-color: rgba(255, 255, 255, 0.734);
   border-radius: 70px;
@@ -245,7 +257,7 @@ About Me
 }
 
 .jobtitle {
-  font-size: 26px;
+  font-size: 24px;
   background: -webkit-linear-gradient(#e63946, #6db0e7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -261,14 +273,101 @@ About Me
   background: -webkit-linear-gradient(#e63946, #6db0e7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 15px;
 }
 
-.notes {
+.jobnotes {
   font-family: "Mark Pro", sans-serif;
-  font-size: 16.5px;
+  font-size: 15px;
+  padding: 10px 15px 0 15px;
+  margin: 10px 0 0 18px;
+}
+
+/* 
+/////////////////////////////////////////////////////////////////
+
+Projects 
+
+/////////////////////////////////////////////////////////////////
+*/
+
+.project-title {
+  position: absolute;
+  top: 315vh;
+  left: 10vw;
+  font-size: 5em;
+  color: white;
+  font-family: "NTR", sans-serif;
+  text-shadow: 5px 5px 15px #6db0e7;
+}
+
+.project {
+  position: absolute;
+  top: 330vh;
+  left: 10vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 80%;
+  height: 550px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectcard {
+  height: 500px;
+  width: 32%;
+  background-color: rgba(255, 255, 255, 0.734);
+  border-radius: 70px;
+  margin-right: 40px;
+}
+
+.projectcardspacing {
+  margin: 25px;
+}
+
+.projectname {
+  font-size: 28px;
+  background: -webkit-linear-gradient(#e63946, #6db0e7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Mark Pro", sans-serif;
+  font-weight: bolder;
+}
+
+.projectlanguages {
+  font-family: "Mark Pro", sans-serif;
+  font-weight: bolder;
+  background: -webkit-linear-gradient(#e2aef0, #354a77);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: italic;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.projectnotes {
+  font-family: "Mark Pro", sans-serif;
+  font-size: 15px;
+  padding: 10px 15px 0 15px;
+  margin: 10px 0 0 18px;
 }
 
 /* Media Queries  */
+
+@media only screen and (max-width: 1250px) {
+  .jobnotes {
+    font-size: 13.5px;
+  }
+
+  .jobtitle {
+    font-size: 20px;
+  }
+
+  .projectcardspacing {
+    margin: 20px;
+  }
+}
 
 @media only screen and (max-width: 1080px) {
   .name {
@@ -289,14 +388,36 @@ About Me
     left: 7vw;
   }
 
-  .square {
-    top: 205vh;
-  }
-}
+  /* skills */
 
-@media only screen and (max-width: 895px) {
   .square {
-    top: 215vh;
+    display: none;
+  }
+
+  /* experience */
+
+  .jobnotes {
+    font-size: 12px;
+  }
+
+  .card {
+    border-radius: 30px;
+  }
+
+  /* project */
+
+  .projectname {
+    font-size: 25px;
+  }
+
+  .projectcard {
+    margin-right: 20px;
+  }
+
+  .projectnotes {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
   }
 }
 
@@ -324,8 +445,40 @@ About Me
     width: 85%;
   }
 
-  .square {
-    top: 185vh;
+  .names {
+    width: 25%;
+    font-size: 15px;
+    margin: 20px;
+  }
+
+  .card {
+    margin: 0;
+    width: 65%;
+  }
+
+  .project {
+    flex-wrap: wrap;
+  }
+
+  .projectcard {
+    width: 100%;
+    height: 30%;
+    border-radius: 30px;
+    margin: 0;
+  }
+
+  .projectname {
+    font-size: 18px;
+  }
+
+  .projectlanguages {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+
+  .projectnotes {
+    font-size: 10px;
+    padding: 3px;
   }
 }
 
@@ -338,9 +491,23 @@ About Me
     font-size: 60px;
     padding-bottom: 10px;
   }
+}
 
-  .square {
-    top: 205vh;
+@media only screen and (max-width: 600px) {
+  .experience-title {
+    top: 200vh;
+  }
+
+  .experience {
+    top: 220vh;
+  }
+
+  .jobtitle {
+    padding: 25px 20px 0 25px;
+  }
+
+  .jobnotes {
+    margin: 0;
   }
 }
 
@@ -357,7 +524,45 @@ About Me
     font-size: 18px;
   }
 
-  .square {
+  .experience-title {
+    top: 230vh;
+  }
+
+  .experience {
     top: 240vh;
+  }
+
+  .experience-title {
+    font-size: 55px;
+  }
+
+  .button {
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .jobtitle {
+    padding: 25px 15px 0 20px;
+  }
+
+  .project-title {
+    font-size: 60px;
+  }
+
+  .date {
+    padding: 0 15px 0 20px;
+    font-size: 10px;
+  }
+
+  .jobnotes {
+    font-size: 10px;
+  }
+
+  .card {
+    height: 450px;
+  }
+
+  .projectnotes {
+    font-size: 8px;
   }
 }
