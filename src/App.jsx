@@ -21,7 +21,7 @@ export default function App() {
           position: [0, 1, 7.5],
         }}
       >
-        <ScrollControls pages={4}>
+        <ScrollControls pages={5}>
           <Scroll>
             <Name />
           </Scroll>
