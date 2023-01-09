@@ -182,12 +182,90 @@ About Me
 
 .experience-title {
   position: absolute;
-  top: 215vh;
+  top: 220vh;
   left: 10vw;
   font-size: 5em;
   color: white;
   font-family: "NTR", sans-serif;
   text-shadow: 5px 5px 15px #6db0e7;
+}
+
+.experience {
+  position: absolute;
+  top: 240vh;
+  left: 10vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 80%;
+  height: 600px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  height: 500px;
+  width: 45%;
+  background-color: rgba(255, 255, 255, 0.734);
+  border-radius: 70px;
+  margin-right: 40px;
+}
+
+.names {
+  height: 500px;
+  width: 45%;
+  font-size: 25px;
+  background: -webkit-linear-gradient(#6db0e7, #e63946);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Mark Pro", sans-serif;
+  font-weight: bolder;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin: 70px;
+}
+
+.button {
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(230, 223, 223, 0.121);
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+
+.button:hover {
+  background-color: #6db0e76f;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: #b5539e6f;
+}
+
+.jobtitle {
+  font-size: 26px;
+  background: -webkit-linear-gradient(#e63946, #6db0e7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Mark Pro", sans-serif;
+  font-weight: bolder;
+  padding: 35px 20px 0 30px;
+}
+
+.date {
+  font-family: "Mark Pro", sans-serif;
+  font-weight: bolder;
+  padding: 0 20px 0 30px;
+  background: -webkit-linear-gradient(#e63946, #6db0e7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.notes {
+  font-family: "Mark Pro", sans-serif;
+  font-size: 16.5px;
 }
 
 /* Media Queries  */
