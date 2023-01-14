@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "../index.css";
 
 export default function Experience() {
   const [isActiveVTS, setIsActiveVTS] = useState(true);

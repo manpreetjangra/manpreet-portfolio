@@ -6,8 +6,26 @@ import Experience from "./components/Experience";
 import Project from "./components/Project";
 import "./index.css";
 
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useThree } from "@react-three/fiber";
 import { ScrollControls, Scroll } from "@react-three/drei";
+
+const ScrollBar = () => {
+  const viewport = useThree((state) => state.viewport);
+
+  return (
+    <ScrollControls pages={viewport.height < 6 ? 5 : 4}>
+      <Scroll>
+        <Name />
+      </Scroll>
+      <Scroll html style={{ width: "100%" }}>
+        <AboutMe />
+        <Experience />
+        <Project />
+      </Scroll>
+      <Galaxy />
+    </ScrollControls>
+  );
+};
 
 export default function App() {
   return (
@@ -21,17 +39,7 @@ export default function App() {
           position: [0, 1, 7.5],
         }}
       >
-        <ScrollControls pages={4}>
-          <Scroll>
-            <Name />
-          </Scroll>
-          <Scroll html style={{ width: "100%" }}>
-            <AboutMe />
-            <Experience />
-            <Project />
-          </Scroll>
-          <Galaxy />
-        </ScrollControls>
+        <ScrollBar />
       </Canvas>
       <SocialMedia />
     </>

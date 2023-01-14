@@ -1,6 +1,4 @@
 import { Html } from "@react-three/drei";
-import "../index.css";
-import "animate.css";
 
 export default function Name() {
   return (
