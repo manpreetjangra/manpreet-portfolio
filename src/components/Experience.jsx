@@ -29,13 +29,31 @@ export default function Experience() {
       <h1 className="experience-title">&lt;Experience/&gt;</h1>
       <div className="experience">
         <div className="names">
-          <h1 className="button" onClick={handleClickVTS}>
+          <h1
+            className="button"
+            onClick={handleClickVTS}
+            style={{
+              backgroundColor: !isActiveVTS ? "" : "#6db0e76f",
+            }}
+          >
             Software Engineer Intern @ VTS
           </h1>
-          <h1 className="button" onClick={handleClickMetrix}>
+          <h1
+            className="button"
+            onClick={handleClickMetrix}
+            style={{
+              backgroundColor: !isActiveMetrix ? "" : "#6db0e76f",
+            }}
+          >
             Front End Developer Intern @ Metrix
           </h1>
-          <h1 className="button" onClick={handleClickToronto}>
+          <h1
+            className="button"
+            onClick={handleClickToronto}
+            style={{
+              backgroundColor: !isActiveToronto ? "" : "#6db0e76f",
+            }}
+          >
             Researcher @ University of Toronto
           </h1>
         </div>
