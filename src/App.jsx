@@ -13,7 +13,7 @@ const ScrollBar = () => {
   const viewport = useThree((state) => state.viewport);
 
   return (
-    <ScrollControls pages={viewport.height < 6 ? 5 : 4}>
+    <ScrollControls pages={viewport.width < 12 ? 5 : 4}>
       <Scroll>
         <Name />
       </Scroll>
